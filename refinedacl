@@ -1,0 +1,35 @@
+@prefix : <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix acl: <http://www.w3.org/ns/auth/acl#> .
+@prefix gen: <http://www.w3.org/2006/gen/ont#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix racl: <https://github.ugent.be/mdnoo/MasterThesis/blob/master/refinedacl?raw=1#>
+    
+
+	
+racl:stopInheritance  a rdf:Property;
+         :comment """All inherited policies from higher directories' acl files 
+		  are not transfered on to the directories and resources in the current directory.""";
+	 :domain acl:Authorization;
+         :label "no inherited policies are inherited by things in current directory";
+         :range gen:InformationResource .
+
+
+racl:hasAccessQuery a rdf:Property;
+         :comment """When executed on data the agent is allowed to read from or write to the file, the result of the query is the same exact data."""
+the result of the query """;
+	 :domain acl:Authorization;
+         :label "has following access query";
+         :range :Literal .
+
+
+racl:inherit a rdf:Property;
+         :comment "This authorization also holds for all directories and resources in the current directory.";
+	 :domain acl:Authorization;
+         :label "inherited by things in current directory";
+         :range gen:InformationResource .
+
+racl:accessTo a rdf:Property;
+         :comment "This identifies the resource the policy applies to.";
+	 :domain acl:Authorization;
+         :label "applies to";
+         :range gen:InformationResource .
