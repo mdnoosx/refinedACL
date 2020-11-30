@@ -2,7 +2,7 @@
 @prefix acl: <http://www.w3.org/ns/auth/acl#> .
 @prefix gen: <http://www.w3.org/2006/gen/ont#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix racl: <https://github.ugent.be/mdnoo/MasterThesis/blob/master/refinedacl?raw=1#>
+@prefix racl: <https://raw.githubusercontent.com/mdnoosx/refinedACL/main/refinedacl#>
     
 
 	
