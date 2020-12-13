@@ -8,7 +8,8 @@
 	
 racl:stopInheritance  a rdf:Property;
          :comment """All inherited policies from higher directories' acl files 
-		  are not transfered on to the current directory and directories and resources in the current directory.""";
+		  are not applied to the current directory and are not transfered on to
+		  directories and resources in the current directory.""";
 	 :domain acl:Authorization;
          :label "no inherited policies are inherited by things in current directory";
          :range gen:InformationResource .
